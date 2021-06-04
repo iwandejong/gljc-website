@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Gereformeerde Laerskool Johannes Calvyn - gljc.co.za</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gereformeerde Laerskool Johannes Calvyn</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href='img/favicon.jpg' rel='shortcut icon'>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: none;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #183883;;/*#f4511e;*/
+    color: #FF5D00;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+	font-size: 10pt;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #183883;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #183883; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #183883 !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #183883 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top" style="border-bottom: 4px; border-bottom-style: solid; border-bottom-color:#183883">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage" style="padding: 0; margin: 0px;"><img src="img/gljc.svg" style="height: 30px; margin: 10px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Wie is Ons?</a></li>
+        <li><a href="#gesk">Geskiedenis</a></li>
+        <li><a href="#port">Onderwys</a></li>
+        <li><a href="#hoof">Van die Hoof</a></li>
+        <li><a href="#contact">Kontak ons</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center" style="padding: 100px;">
+  <div style="font-size: 28pt" style="margin:50px; padding: 50px;">
+  <img src="img/gljc.svg" style="height: 200px" style="margin:50px; padding: 50px;">
+  </div><br>
+  <p style="font-size: 18pt" style="margin:0px; margin-top: 0px; padding-top: 0px; padding: 0px;">Gereformeerde Laerskool Johannes Calvyn, Pretoria</p> 
+  <!--<form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>-->
+</div>
+
+<div class="container" style="margin-bottom: -100px; padding-bottom: -100px;">
+	<div class="row">
+	<div class="box">
+                    <div id="carousel-example-generic" class="carousel slide" width="100%">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" style ="width:auto;height:500px;">
+                            <div class="item active">
+                                <img class="img-responsive" src="img/7.jpg" alt="" style="width: 100%">
+                            </div>
+                            <!--<div class="item">
+                                <img class="img-responsive" src="img/2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="img/3.jpg" alt="">
+                            </div>
+                            <div class="item active">
+                                <img class="img-responsive" src="img/4.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="img/5.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="img/6.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="img/.jpg" alt="">
+                            </div>-->
+                            <!-- <div class="item">
+                                <img class="img-responsive" src="img/8.jpg" alt="">
+                            </div> -->
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+					</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid" style="margin-top: -100px; padding-top: -100px;">
+  <div class="row">
+
+    <div class="col-sm-12">
+      <h2 style=" font-size: 30pt;"><span class="logo"><i class="fa fa-circle" style="font-size: 30pt; margin: 10px"></i><i class="fa fa-circle" style="color:#f4511e; font-size: 25pt;" ></i></span>      Wie is ons?</h2><br>
+      <h4>Die Gereformeerde Laerskool Johannes Calvyn wil graag Christelike ouers bystaan in hul opvoedingstaak om verbondskinders op te voed tot eer van die Here. Die Woord van God, soos bely word in die Drie Formuliere van Eenheid, word as onfeilbare gids gebruik om kinders te laat groei in hul liefde tot God en hul naaste.<br><br>Ons glo dat verbondsonderrig by Kerk, Skool & Huis geintegreerd saamwerk tot 'n kind se opvoeding. Die skool bied leerders kennis en vaardighede vir 'n lewe van liefde en diensbaarheid. Alle aktiwiteite en studie word gedoen in die konteks van die Bybelse wysheid, en in afhanklikheid van God se onmisbare genade en seën.</h4><br>
+      <p>'Hy tog het 'n getuienis opgerig in Jakob en 'n wet gegee in Israel, wat Hy ons vaders beveel het — om dit aan hulle kinders bekend te maak, sodat die volgende geslag dit kan weet, die kinders wat gebore word, dat hulle kan opstaan en vertel aan hulle kinders, en hulle vertroue op God kan stel en die dade van God nie vergeet nie, maar sy gebooie kan bewaar, '
+
+PSALMS 78:5-7</p>
+      <br><a href="#gesk"><button class="btn btn-default btn-lg">Ons Geskiedenis</button></a>
+    </div>
+	<div class="col-sm-2">
+      
+    </div>
+    
+  </div>
+</div>
+
+<div class="container-fluid bg-grey" id="gesk">
+  <div class="row">
+    <!--<div class="col-sm-4">
+      <!-- <span class="glyphicon glyphicon-globe logo slideanim"></span> ->
+    </div>-->
+    <div class="col-sm-12">
+      <h2 style=" font-size: 30pt;"><span class="logo"><i class="fa fa-circle" style="font-size: 30pt; margin: 10px"></i><i class="fa fa-circle" style="color:#f4511e; font-size: 25pt;" ></i></span>   Geskiedenis</h2><br>
+      <h4><strong>Agtergrond en die Naam</strong> Johannes Calvyn is die naam van een van die groot hervormers wat in die sestiende eeu ‘n groot invloed op die reformasie in Europa gehad het. Net soos wat Johannes gelowige kinders terug na die Bybel verwys het, so is dit ons skool se strewe om voortdurend terug na die Skrif te verwys.<br><br>
+
+Tydens die Hervorming het die Here Johannes Calvyn (1509 – 1564) gebruik om sy Woord te laat seëvier. Die Hervorming het die gelowige kinders terug verwys na die Bybel en die volgende onderskryf:<br><br>
+
+Sola Scriptura: die gesag van die Heilige Skrif<br>
+Sola Fide: die regverdigmaking deur die geloof<br>
+Sola Gratia: die redding uit genade alleen.<br>
+Johannes Calvyn het besef dat ons hele lewe gerig moet wees op die eer van God. Nie net ons persoonlike lewens nie, maar alle aspekte van ons lewe, ingesluit alle vorme van regering, die wetenskap en die onderwys. Dit alles moet onderwerp wees aan God se Woord en aan sy soewereiniteit, sodat ons Hom deur dit alles groot kan maak. Daar is geen ruimte om neutraal te wees nie. Deurdat ons skool se naam ‘Gereformeerde Laerskool Johannes Calvyn’ is, onthou ons nie net hierdie man wat so hard gewerk het in volle vertroue in God se koninkryk nie, maar belangriker nog, ons erken dat ons ook vandag nog volstaan in daardie vertroue wat hy verkondig het, deur die genade van God.<br><br>
+
+Ons skool het sy basis in die Vrye Gereformeerde Kerke waar ouers, leerders en onderwysers elke Sondag saam aanbid. Ons mag die belangrikheid sien van ŉ sterk basis tussen die geloof van die kerk en die kurrikulum van die skool. Die driehoekverhouding, wat gesinne, kerk en skool saambind, is ŉ seën vir almal van ons. Mag die HERE ons geloofsvertroue in Hom seën sodat die volgende generasies Hom ook sal wil dien in geloofsvertroue en gehoorsaamheid.</h4><br>
+      <p><strong>Oprigting van die Skool</strong> 
+Die Gereformeerde Laerskool Johannes Calvyn het in 1964 tot stand gekom toe ‘n aantal ouers ‘n skoolvereniging gestig het. Hierdie ouers, almal lidmate van die Vrye Gereformeerde Kerk te Pretoria, het vanuit die doopbelofte wat hulle voor God afgelê het, dit noodsaaklik geag om ‘n skool onder hulle eie beheer op te rig. In so ‘n ouerskool kan ouers hul kinders laat onderrig in ooreenstemming met die leer van die Skrif soos wat die kinders dit by die huis en in die kerk geleer word. ‘n Statuut waarin die grondslag en ander reëlings t.o.v. die skool neergelê is, is ook deur die ouers opgestel. <br><br>ONS BASIS<br> Die ouers van ons skool besef dat daar ŉ groot mate van konfessionele eenheid tussen die gesinne, die skool en die kerk moet wees. Daarom onderskryf die skool dieselfde grondslag as die Vrye Gereformeerde Kerke: die onfeilbare Woord van God en die Drie Formuliere van Eenheid, naamlik die Nederlandse Geloofsbelydenis (1559), die Heidelbergse Kategismus (1563) en die Dordtse Leerreëls (1618).</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="port" class="container-fluid text-center">
+  <h2 style=" font-size: 30pt;"><span class="logo"><i class="fa fa-circle" style="font-size: 20pt; margin: 10px"></i></span>    Onderwys   <span class="logo"><i class="fa fa-circle" style="color:#f4511e; font-size: 20pt; margin:10px;" ></i></span></h2>
+  <h4></h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm">
+      <span class="fa fa-cross logo-small"></span>
+      <a href="#" data-toggle="tooltip" title="Hoekom gereformeerde onderwys?" style="text-decoration: none;"><h4>GEREFORMEERDE ONDERWYS</h4>
+      <p>Die vraag word soms gevra waarom gereformeerde onderwys aan ons kinders gegee word. Die feit dat ons God se kinders is, is nie maar net toevallig nie, maar dit is uit God se onnaspeurlike genade. Hy het ons gekies om sy kinders te wees. Reeds by die doopvont het die HERE beloof dat Hy ons Vader wil wees. Reeds toe het die Vader vir ons gesê: “Jy is My kind en Ek sal vir jou sorg.” Reeds toe het die Seun ons verseker: “Ek sal jou was en reinig met My bloed.” Reeds toe het die Heilige Gees ons beloof: “Ek sal in jou leef en die geloof in jou werk.” Op dieselfde manier laat ons ons kinders doop en ontvang ons kinders ook die beloftes. <br><br>Ons, as ouers, lê ŉ belofte af voor die Here en sy gemeente: “Ons bely dat die leer van die Ou en Nuwe Testament wat in die artikels van die Christelike geloof vervat is en in die Christelike kerk hier geleer word, die ware en volkome leer van die saligheid is.” Ons het by hierdie geleentheid ook beloof dat ons ons kinders sal onderrig en laat onderrig in hierdie leer. Ons het beloof dat ons dit na die beste van ons vermoë sal doen. Waarom dan gereformeerde onderwys? Vanweë daardie belofte! Die gereformeerde skool kan alleen so funksioneer wanneer dit ŉ verlenging is van die gereformeerde gesin. Die gereformeerde karakter van ons gesinne en skool kom nie slegs tot uiting in die sing van Psalms, die Christelike gebede en die Bybelse onderwys nie. Nee, daardie gereformeerde karakter moet deurwerk in alle aspekte van die lewe. Dit werk deur in alle vakgebiede van die skool, net soos die suurdeeg in ŉ brood. <br><br>Laat ons die Here elke dag dank vir hierdie seëning van gereformeerde onderwys, en bid dat ons getrou sal mag bly aan Hom, sodat ons as ouers en onderwysers saam mag werk om ons kinders te bekwaam met die helm van verlossing en die swaard van die Gees - dit is die Woord van God (Efesiërs 6:17).</p></a>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+  
+  <h2>Ons geloof</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>Maar ek en my huis, ons sal die Here dien.
+<br><span>Josua 24:15</span></h4>
+      </div>
+      <div class="item">
+        <h4>Soos die takke van 'n boom groei ons almal in verskillende rigtings: tog bly ons steeds gewortel in Een.<br><span>GLJC 50 jaar</span></h4>
+      </div>
+      <div class="item">
+        <h4>Want die Here is goed; sy goedertierenheid is tot in ewigheid, en sy trou van geslag tot geslag.<br><span>Psalm 100:5</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div id="hoof" class="container-fluid text-center">
+  <h2>Van die Hoof</h2>
+  <h4></h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm">
+      <span class="fa fa-user logo-small"></span>
+      <a href="#" data-toggle="tooltip" title="Hoekom gereformeerde onderwys?" style="text-decoration: none;"><h4>Van die Hoof, Lienette Smit</h4>
+      <p>“En ‘n ander deel (van die saad) het in die goeie grond geval en vrug opgelewer: die een honderd-, die ander sestig-, die ander dertigvoudig.” (Matt 13:8)<br><br>
+
+So aan die begin van die jaar is dit goed om weer stil te staan by die rede vir gereformeerde onderwys. Gaan dit oor die kennis wat die leerders versamel? Bybelkennis? Gaan dit oor die uitslae aan die einde van die jaar? Gaan dit oor die ontwikkeling van die kinders op akademiese, sosiale en emosionele vlak? Natuurlik is dit alles goeie redes, maar die belangrikste rede is om die kinders te leer om in hulle lewe dissipels van Christus te wees. Die wêreld behoort aan die Here. Om regtig onder die indruk te kom van God se skeppingsmag en van sy versorgende liefde, is dit belangrik dat ons die wêreld bestudeer. Daarvoor kom ons skool toe! Wanneer ons sien en verstaan wat die Here vir ons gedoen het, sal ons dit ook met dankbaarheid in ons lewens wys. Dit is dan wanneer die saad van die geloof vrug dra in die goeie grond. Daar is baie verskillende maniere waarop hierdie vrug sigbaar word. Die Here Jesus sê tog hier in Matt 13 dat die een honderdvoudig en die ander dertigvoudig sal dra. Elkeen op sy eie manier en volgens sy eie talente. Om hierdie dissipelskap te leer, het ons mekaar se hulp en ondersteuning nodig. Ouers, leerders, onderwysers en bestuur het saam een doel voor oë: om die Here se Naam groot te maak in alles wat ons doen. Mag die Here ons die krag en sterkte gee wat ons ook hierdie jaar weer nodig het om tot Sy eer te leef! 
+
+Mev. L. Smit</p></a>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Ons Laerskool</h2>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Graad RR - R</h1>
+        </div>
+		  <div class="panel-body">
+          <p><strong>Kleuter</strong>skool</p>
+		  <p><strong>Bybel </strong> grondslag</p>
+		  </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Graad 1-3</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>Grondslag</strong>fase</p>
+		  <p><strong>Bybel </strong> grondslag</p>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Graad 4-7</h1>
+        </div>
+        <div class="panel-body">
+		<p><strong>Intermediêre </strong> fase</p>
+		  <p><strong>Bybel </strong> grondslag</p>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Kontak ons</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><span class="glyphicon glyphicon-map-marker"></span> 28ste Laan 800<br>Rietfontein, Pretoria<br>0186</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +27 12 331 0218</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> kantoor@gljc.co.za</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row" align="center">
+        Aan die voet van die Magaliesberg het verrys deur hoër krag<br>
+‘n Gereformeerde Laerskool vir kerk en nageslag:<br> 
+Dis die Johannes Calvyn,<br> 
+Waar ons almal, groot en klein, getrou ons arbeid wil verrig,<br> 
+Gods Woord is ons ‘n helder lig, <br>
+opreg in diens van die Here: Prompte et Sincere.<br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=-25.7009004,28.2318965&amp;spn=-25.7019544,28.2331009&amp;t=m&amp;z=18&amp;output=embed"></iframe>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="fa fa-chevron-up"></span>
+  </a>
+  <p>Kontak Webmaster <a href="mailto:idj.idejong@gmail.com" title="Visit w3schools">Mail <i class="fa fa-sign-out-alt"></i></a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
